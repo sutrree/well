@@ -90,7 +90,7 @@ class Talk:
     self.transport.path = self.auth_query_path
 
     qr = self.client.getAuthQrcode(True, "Treerachai")
-    callback("Salin Link Dibawah ini dan paste di apliaksi line\nCreated By Treerachai - zFz\nline://au/q/" + qr.verifier)
+    callback("Salin Link Dibawah ini dan paste di apliaksi line\nCreated By Treerachai - treebot\nline://au/q/" + qr.verifier)
 
     r = requests.get("https://" + self.host + self.wait_for_mobile_path, headers={
       "X-Line-Application": self.LA,
