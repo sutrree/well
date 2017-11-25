@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import LINETCR
-from LINETCR.lib.curve.ttypes import *
+import treetc
+from treetc.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,base64
-cl = LINETCR.LINE()
+cl = treetc.LINE()
 print u"""login start"""
 cl.login(qr=True)
 cl.loginResult()
